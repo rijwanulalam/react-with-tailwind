@@ -18,12 +18,12 @@ const NavBar = () => {
          : <XMarkIcon className="h-6 w-6 text-blue-500 cursor-pointer" />}</span>
       </div>
 
-      <ul className={`text-right md:flex gap-10 justify-end p-5 absolute inset-x-0 bg-orange-500 duration-500 md:static ${open ? 'top-11' : '-top-48'}`}>
+      <ul className={`text-right md:flex gap-10 justify-end p-5 absolute inset-x-0 bg-sky-500 duration-500 md:static ${open ? 'top-11' : '-top-48'}`}>
         {routes.map((route) => (
           <Link key={route.id} route={route}></Link>
         ))}
       </ul>
-      <h1 className='text-7xl text-center'>Hello from tailwind</h1>
+      
     </nav>
   );
 };

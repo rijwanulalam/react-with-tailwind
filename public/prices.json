@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Basic Plan",
+      "features": ["Cardio", "Weights", "Classes"],
+      "price": 29.99
+    },
+    {
+      "id": 2,
+      "name": "Premium Plan",
+      "features": ["Full Access", "Personal Trainer", "Nutrition", "Spa"],
+      "price": 49.99
+    },
+    {
+      "id": 3,
+      "name": "Student Plan",
+      "features": ["Student Discount", "Cardio", "Classes"],
+      "price": 19.99
+    }
+  ]
+  
