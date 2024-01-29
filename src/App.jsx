@@ -6,7 +6,6 @@ function App() {
   return (
     <>
       <NavBar></NavBar>
-      <h1 className='text-7xl text-center'>Hello from tailwind</h1>
     </>
   )
 }

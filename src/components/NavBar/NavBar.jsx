@@ -13,16 +13,17 @@ const NavBar = () => {
   ];
   return (
     <nav className="md:container mx-auto relative">
-      <div className="absolute right-5 top-3 right md:hidden" onClick={() => setOpen(!open)}>
+      <div className="md:hidden" onClick={() => setOpen(!open)}>
         <span>{open === true ? <Bars3Icon className="h-6 w-6 text-blue-500 cursor-pointer" />
          : <XMarkIcon className="h-6 w-6 text-blue-500 cursor-pointer" />}</span>
       </div>
 
-      <ul className="text-right md:flex gap-10 justify-end py-5 max-w-md:absolute">
+      <ul className={`text-right md:flex gap-10 justify-end p-5 absolute inset-x-0 bg-orange-500 duration-500 md:static ${open ? 'top-6' : '-top-48'}`}>
         {routes.map((route) => (
           <Link key={route.id} route={route}></Link>
         ))}
       </ul>
+      <h1 className='text-7xl text-center'>Hello from tailwind</h1>
     </nav>
   );
 };
